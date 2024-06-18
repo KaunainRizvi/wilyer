@@ -1,0 +1,162 @@
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Arial", sans-serif;
+}
+
+.app-container {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.profile-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px 0;
+  color: #666;
+  cursor: pointer;
+}
+
+.menu li.active {
+  color: #f45b69;
+  font-weight: bold;
+}
+
+.logout-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #f45b69;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+.billing-header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.billing-header p {
+  color: #666;
+}
+
+.order-history h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.order-history ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-history .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.order-history .order-item span {
+  color: #333;
+}
+
+.order-history .order-item button {
+  padding: 5px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-history .order-item button:hover {
+  background-color: #e0e0e0;
+}
+
+.load-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #f45b69;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.payment-method h2,
+.subscription h2 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.payment-details,
+.subscription-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+
+.payment-details img {
+  width: 50px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.cancel-subscription {
+  background-color: #f45b69;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cancel-subscription:hover {
+  background-color: #e04050;
+}
